@@ -1,0 +1,66 @@
+.clothes {
+  .category {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    li {
+      display: inline;
+      transition: all 0.5s ease;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 10%;
+        bottom: 0px;
+        width: 50px;
+        height: 14px;
+        transform: skew(-12deg) translateX(-50%);
+        background: #5e7a93;
+        z-index: -1;
+        opacity: 0.3;
+      }
+      a {
+        all: unset;
+        margin-right: 20px;
+        color: #4d4c4c;
+        font-weight: 300;
+        font-style: italic;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        &:hover {
+          color: #c6e0ff;
+        }
+      }
+    }
+  }
+}
+
+.items {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: clothes 0.4s ease-out forwards;
+  a {
+    all: unset;
+    width: 33%;
+    display: inline-block;
+    &:after {
+      content: '';
+      width: 33%;
+    }
+  }
+}
+
+
+@keyframes clothes {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
