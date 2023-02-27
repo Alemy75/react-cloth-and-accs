@@ -8,7 +8,7 @@ const Header: React.FC = () => {
             <div className={s.header__wrap}>
                 <h1>CLOTH <span>&</span> ACCS.</h1>
                 <ul>
-                    <li><NavLink to="/clothes">Uk</NavLink></li>
+                    <li><NavLink to="/">Главная</NavLink></li>
                     <li><NavLink to="/clothes">Одежда</NavLink></li>
                     <li><NavLink to="/accessories">Аксессуары</NavLink></li>
                 </ul>

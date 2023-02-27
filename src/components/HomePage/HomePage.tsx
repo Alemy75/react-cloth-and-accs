@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import s from './HomePage.module.scss'
 import {Link} from "react-router-dom";
 
